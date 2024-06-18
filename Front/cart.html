@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras - Minha Loja</title>
+    <link rel="stylesheet" href="../Css/styles1.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Minha Loja</div>
+        <nav>
+            <ul>
+                <li><a href="../Front/cart.html">Home</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="../Front/cart.html">Carrinho</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Carrinho de Compras</h1>
+        <section class="cart">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Produto</th>
+                        <th>Preço</th>
+                        <th>Quantidade</th>
+                        <th>Total</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-items">
+                    <!-- Os itens do carrinho serão inseridos aqui -->
+                </tbody>
+            </table>
+            <div class="cart-total">
+                <h2>Total: R$ <span id="cart-total-price">0,00</span></h2>
+                <button id="checkout-button">Finalizar Compra</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Minha Loja. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="js/cart.js"></script>
+</body>
+</html>
