@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Produto</title>
+    <link rel="stylesheet" href="../Css/styles.css">
+</head>
+<body>  
+    <header class="site-header">    
+        <div class="container">
+            <div class="logo">
+                <a href="../Front/index.html">
+                    <img src="../assest/White_Modern_Minimalist_Signature_Brand_Logo-removebg-preview.png" alt="Minha Loja">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../Front/product.html">Produtos</a></li>
+                    <li><a href="../Front/cart.html" class="cart-link">
+                        <img class="imagem" src="../assest/teste-removebg-preview.png"> 
+                    </a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="product-details">
+            <div class="product-image">
+                <img id="product-img" src="" alt="Produto">
+            </div>
+            <div class="product-info">
+                <h1 id="product-name">Nome do Produto</h1>
+                <p id="product-description">Descrição detalhada do produto.</p>
+                <p id="product-price">Preço: R$0,00</p>
+                <label for="cep">Digite seu CEP para calcular o tempo de entrega:</label>
+                <input type="text" id="cep" name="cep">
+                <button id="calculate-delivery">Calcular Entrega</button>
+                <p id="delivery-time"></p>
+                <button class="add-to-cart">Adicionar ao Carrinho</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="../Front/js/product-details.js"></script>
+</body>
+</html>

@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const productElement = event.target.closest('.product');
             const productId = productElement.dataset.id;
             const productName = productElement.querySelector('h3').innerText;
-            const productPrice = parseFloat(productElement.querySelector('p').innerText.replace('R$', '').replace(',', '.'));
+            const productPrice = parseFloat(productElement.querySelector('p').innerText.replace('R$', '').replace('.', ','));
 
             const product = {
                 id: productId,
